@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: feed
-        image: jedielade/udagram-frontend:v1
+        image: jedielade/udagram-frontend:v2
         ports:
-        - containerPort: 80
+          - containerPort: 80

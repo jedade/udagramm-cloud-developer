@@ -4,6 +4,7 @@ metadata:
   name: env-configmap
 data:
   POSTGRES_HOST: "udagram-dev.cwfcqspnfl5m.us-east-1.rds.amazonaws.com"
+  POSTGRES_DB: "udagramdb"
   AWS_BUCKET: "udagram-202860325990-dev"
   AWS_REGION: "us-east-1"
   AWS_PROFILE: "default"
