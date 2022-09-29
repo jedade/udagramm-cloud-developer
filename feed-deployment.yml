@@ -18,7 +18,7 @@ spec:
       - name: backend-feed
         image: jedielade/udagram-api-feed:v1
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
         envFrom:
           - configMapRef:
               name: env-configmap

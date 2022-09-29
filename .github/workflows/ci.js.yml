@@ -23,10 +23,10 @@ jobs:
     - run: docker tag reverseproxy jedielade/reverseproxy:v1
     - run: docker tag udagram-api-feed jedielade/udagram-api-feed:v1
     - run: docker tag udagram-api-user jedielade/udagram-api-user:v1
-    - run: docker tag udagram-frontend:local jedielade/udagram-frontend:v1
+    - run: docker tag udagram-frontend:local jedielade/udagram-frontend:v2
     # En supposant que DOCKER_PASSWORD et DOCKER_USERNAME sont définis dans les paramètres du dépôt Travis
     - run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
     - run: docker push jedielade/udagram-api-feed:v1
     - run: docker push jedielade/udagram-api-user:v1
-    - run: docker push jedielade/udagram-frontend:v1
+    - run: docker push jedielade/udagram-frontend:v2
     - run: docker push jedielade/reverseproxy:v1
